@@ -28,3 +28,9 @@ It is known for its **clean syntax**, **readability**, and **versatility**.
 ```python
 # This program prints "Hello, world!"
 print("Hello, world!")
+
+## Compilation using CPython
+
+1. It Parses the code and form AST( Abstract Syntax Tree)
+2. Compiles to bytecode which is .pyc
+3. Interprets that byte code using C-Based Virtual Machine
