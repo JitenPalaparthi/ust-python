@@ -27,3 +27,33 @@ elif age>=21 and (gender=='M' or gender=='m'):
     print("He is eligible for marriage, bcz age is",age)
 else:
     print("not eligible for marriage")
+
+# using not
+
+ok = True
+
+if not ok:
+    print("False")
+else:
+    print("True")
+
+a,b = 10,10
+
+if not (a==b):
+    print("a and b are different",a,b)
+else:
+    print("a and b are same",a,b)
+
+
+
+a,b = 10,20
+
+if a is b:
+    print("True")
+else:
+    print("False")
+
+a = None 
+
+if a == None:
+    print("Yes, a is None")
