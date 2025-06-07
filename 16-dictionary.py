@@ -44,3 +44,10 @@ for key,value in person.items():
 
 # overflow bucckets -> Linked list is used 
 # collisions 
+
+# Ubuntu Image -- docker 
+# Few layers (Image Layers )
+
+# Postgres Ubuntu -> Layer-1, Layer-2, Layer-3
+# MySql Ubuntu 
+# Kafka Ubuntu 

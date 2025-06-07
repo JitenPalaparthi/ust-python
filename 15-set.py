@@ -47,6 +47,8 @@ normalset1.add(100)
 print(normalset1)
 frozenset1.add(100)
 
+set3 = {1,101,"Hello World",True}
+
 
 
 
