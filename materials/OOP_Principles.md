@@ -3,6 +3,8 @@
 
 Object-Oriented Programming is a programming paradigm based on the concept of "objects", which can contain data and methods.
 
+Objects are classified as classes
+
 ## 🧱 1. Encapsulation
 
 > Wrapping data (variables) and code (methods) together into a single unit (class), and restricting direct access to some of the object’s components.

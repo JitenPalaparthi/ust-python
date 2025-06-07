@@ -22,9 +22,20 @@ class Rect:
 
     def perimter(self):
         self.__calculate_perimeter()
+    
+    def area_of(r):
+        return r.l * r.b
+
 
 
 rect1 = Rect(10.12,12.34)
+rect2 = Rect(100.12,123.34)
+
+a1=Rect.area_of(rect1)
+print("area of rect:",a1)
+
+# rect1.area_of
+
 
 a1=rect1.area()
 
@@ -48,7 +59,25 @@ except AttributeError as a:
 
 print("hello end of this program")
 
+### 
 
+def area_of_rect(l,b):
+    return l *b
+
+a1 = area_of_rect(12.12,23.45)
+print("area of rect a1:",a1)
+
+
+def sum_of(list):
+    sum = 0 # local variable created here
+    for l in list:
+        sum+=l
+    return sum # return 
+
+
+list = [1,2,3,54,65,76,34]
+s = sum_of(list)
+print(s)
 
 
 
