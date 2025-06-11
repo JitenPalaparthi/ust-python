@@ -16,3 +16,15 @@ def create_from_file(cls):
     # read file, keep a value in the file 
     # read the value and check the value whether is a int or float 
     # create an instance of square with the value
+
+
+Payment
+
+UPI Payment
+PayPal
+NetBanking 
+CardPayment
+    |
+    --- Debit Card
+    |
+    --- Credit Card 
