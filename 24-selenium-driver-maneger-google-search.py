@@ -103,7 +103,7 @@ def test_google_search(browser_name):
             
 if __name__ == "__main__": # func main(){}
 
-    browsers=["Chrome"]
+    browsers=["Chrome","Edge"]
     # for browser in ["Chrome","Edge"]:
     for browser in browsers:
         test_google_search(browser)

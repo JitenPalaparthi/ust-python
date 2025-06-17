@@ -12,6 +12,8 @@ driver= webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 driver.maximize_window()
 
+driver.implicitly_wait(5)
+
 driver.get("https://w3schools.com")
 
     # 1. find the Sign in button 
