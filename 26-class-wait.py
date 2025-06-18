@@ -72,7 +72,9 @@ class qaTextBodDemo:
     def __get_output(self):
        output={}
        try:
-        output_element =  self.driver.find_element(By.ID,"output")
+       # output_element =  self.driver.find_element(By.ID,"output")
+        output_element= self.wait.until(EC.visibility_of_element_located((By.ID,"output")))
+
         output["name"]= output_element.find_element(By.ID,"name").text
         output["email"]= output_element.find_element(By.ID,"email").text
         output["currentAddress"]= output_element.find_element(By.ID,"currentAddress").text
