@@ -74,6 +74,9 @@ class qaTextBodDemo:
        try:
        # output_element =  self.driver.find_element(By.ID,"output")
         output_element= self.wait.until(EC.visibility_of_element_located((By.ID,"output")))
+        #output["name"]=  WebDriverWait(output_element,1).until(EC.visibility_of_element_located(((By.ID,"name")))).text
+      
+        #is_disappeared = WebDriverWait(output_element, 2, .2, (ElementNotVisibleException)) .until_not(lambda x: x.find_element(By.ID, "name").is_displayed())
 
         output["name"]= output_element.find_element(By.ID,"name").text
         output["email"]= output_element.find_element(By.ID,"email").text
@@ -81,15 +84,25 @@ class qaTextBodDemo:
         output["permanentAddress"]= output_element.find_element(By.ID,"permanentAddress").text
         return output
        except Exception as E:
-           print(f"{str(E)}")
+           print(f"------>>>>>>>>>>>>{str(E)}")
            return output
          
 
 if __name__=="__main__":
     qa = qaTextBodDemo(10)
-    #qa.empty_textbox_submission()
+    qa.empty_textbox_submission()
     #time.sleep(2)
-    qa.text_textbox_submission()
-    time.sleep(2)
+   # qa.text_textbox_submission()
+    time.sleep(5)
 
 # please do this on w3schools -> signup
+
+
+# Write a full fledged SignUp for W3schoools 
+"""
+1.  Write a class and methods
+2.  Use waits, probably visible for the signup button click 
+2.1 Check on empty create account
+3.  After registration , write successful and failure login/signin on w3schoools
+4.  Write or give a invalid email and check how does the sytem react and automate it.
+"""
