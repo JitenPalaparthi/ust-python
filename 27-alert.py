@@ -57,3 +57,6 @@ if WebDriverWait(driver, 6).until(EC.alert_is_present()):
     print("alert is present")
     time.sleep(1)
     driver.switch_to.alert.accept()
+
+    
+
