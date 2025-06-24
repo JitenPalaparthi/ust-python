@@ -42,6 +42,7 @@ dob = driver.find_element(By.ID, "dateOfBirthInput")
 dob.send_keys("")
 dob.send_keys("Jun 2025"+Keys.RETURN)
 
+
 # time.sleep(10)
 # # Select month
 # month_dropdown = driver.find_element(By.CLASS_NAME, "react-datepicker__month-select")
@@ -117,6 +118,9 @@ submit_button.click()
 # Validate submission
 try:
     success_modal = wait.until(EC.visibility_of_element_located((By.ID, "example-modal-sizes-title-lg")))
+  
+    
+  
     print("Form submitted successfully!")
     
     # Print submitted data

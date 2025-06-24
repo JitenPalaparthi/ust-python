@@ -1,0 +1,1 @@
+python -m pytest tests/test_login.py -v --html=reports/report.html --self-contained-html
